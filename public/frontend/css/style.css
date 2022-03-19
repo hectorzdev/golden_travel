@@ -3,11 +3,14 @@
 
 body{
     font-family: 'Sarabun', sans-serif;
+    background-color: #f3f3f3;
 }
 
 header{
     background-color: #fff;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px rgb(107, 107, 107);
+    position: relative;
+    z-index: 1;
 }
 
 header .header ul , header .top_header ul{
@@ -36,6 +39,15 @@ header .header ul , header .top_header ul{
     padding: 0.5rem 0;
 }
 
+.header ul li.active{
+    border-bottom: 5px solid #fd8e00;
+}
+
+.header ul li.active a{
+    color:  #fd8e00;
+}
+
+
 .logo_brand{
     width: 100px;
 }
@@ -57,4 +69,148 @@ header .header ul , header .top_header ul{
     cursor: pointer;
     text-decoration: none;
     color: #272727;
+}
+
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fd8f0063;
+}
+
+.carousel-indicators .active{
+    background-color: #fd8e00;
+}
+.text-danger-logo{
+    color: #fd6600;
+}
+
+.container-xl{
+    max-width: 1400px;
+}
+
+.our_tour{
+    box-shadow: 0 5px 14px #0a0a0a7a;
+    position: relative;
+}
+
+.trip_group{
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.trip_group:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgb(110, 110, 110);
+}
+
+.trip_name{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 7px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    background-color: #00000080;
+    padding: 0.1rem 0;
+}
+
+.trip_detail{
+    margin-top: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trip_location{
+    color: #3e3e3e;
+}
+
+.trip_price{
+    color: #fd6600;
+}
+.recommended{
+    position: absolute;
+    background-color: #fd6600;
+    color: white;
+    width: 195px;
+    text-align: center;
+    padding: 0.1rem 0;
+    transform: rotate(-42deg);
+    left: -49px;
+    top: 31px;
+}
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(1, 88, 146);
+}
+
+.contact_us{
+    background-image: url(../images/contact_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.line_center{
+    width: 1px;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+
+.btn-submit-contact{
+    background-color: #2792d8;
+    color: white;
+    border: 1px solid #3ca1e3;
+    border-radius: 10px;
+    padding: 0.3rem 1.3rem;
+    margin-top: 15px;
+    box-shadow: 1px 2px 4px #095181;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.ml--4{
+    margin-left: -1.5rem;
+}
+
+.footer-icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    color: #fff !important;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 5px;
+    text-decoration: none !important;
+}
+
+.facebook {
+    background: #3858a2;
+}
+
+.line {
+    background: #00c300;
+}
+
+.instagram {
+    background: #f02f89;
+}
+
+footer{
+    background-color: #033758;
+    padding: 0.65rem;
 }

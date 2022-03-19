@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
+    <link rel="shortcut icon" href="{{asset('frontend/images/icon.jpg')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Goldden mood travel </title>
 </head>
@@ -37,7 +38,7 @@
                     </li>
                     <li >
                         <a href="javascript:void(0)">
-                           TH <i class="fas fa-angle-down"></i>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg" width="22" class="mr-1" alt=""> TH <i class="fas fa-angle-down"></i>
                         </a>
                     </li>
                 </ul>
@@ -56,7 +57,7 @@
                             Golden Mood Travel
                         </a>
                     </li>
-                    <li class="ml-auto header_item">
+                    <li class="ml-auto header_item active">
                         <a href="javascript:void(0)" class="header_link">
                             หน้าแรก
                         </a>
@@ -87,6 +88,15 @@
     </header>
     @yield('content')
 
+
+    <footer>
+        <div class="container text-center">
+            <span class="text-white">© Copyright by Golden Mood Travel Co.,Ltd. 2022</span>
+        </div>
+    </footer>
     @yield('script')
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
