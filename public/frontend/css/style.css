@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;400;500;600&display=swap');
+
+body{
+    font-family: 'Sarabun', sans-serif;
+}
+
+header{
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+
+header .header ul , header .top_header ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.top_header{
+    background: linear-gradient(270deg, rgba(54,176,255,1) 0%, rgba(34,140,208,1) 100%);
+}
+
+.top_header ul li {
+    margin: 0 0.7rem;
+    padding: 0.5rem 0;
+    
+}
+
+.top_header ul li a{
+    color: #fff; 
+}
+
+.header ul li {
+    margin: 0 0.9rem;
+    padding: 0.5rem 0;
+}
+
+.logo_brand{
+    width: 100px;
+}
+
+.text_brand{
+    font-size: 24px;
+    color: #228cd0;
+}
+
+.header_item{
+    margin-top: 15px !important;
+}
+
+.header_link{
+    color: #272727;
+}
+
+.header_link:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #272727;
+}
